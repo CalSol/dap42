@@ -24,12 +24,8 @@ export V
 
 BUILD_DIR      ?= ./build
 
-all: DAP42.bin DAP42DC.bin KITCHEN42.bin \
-     DAP103.bin DAP103-DFU.bin \
-     DAP103-BLUEPILL.bin DAP103-BLUEPILL-DFU.bin \
-     DAP103-NUCLEO-STBOOT.bin \
-     BRAINv3.3.bin \
-     DAP42K6U.bin
+all: DAP103.bin DAP103-DFU.bin
+
 clean:
 	$(Q)$(RM) $(BUILD_DIR)/*.bin
 	$(Q)$(MAKE) -C src/ clean
